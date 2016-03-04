@@ -1,0 +1,6 @@
+categories: [Assembly]
+description: test
+name: suite_test
+type: unrestricted
+remote_repository_url:
+owner: chrisd
