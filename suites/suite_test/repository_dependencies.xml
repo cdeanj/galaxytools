@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<repositories description="This is a metapackage, that will install several other tools.">
+    <repository name="chemical_data_sources" owner="bgruening" />
+    <repository name="openbabel" owner="bgruening" />
+</repositories>
