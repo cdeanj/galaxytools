@@ -1,6 +1,6 @@
 categories: [Assembly]
 description: test
 name: suite_test
-type: unrestricted
-remote_repository_url:
+type: repository_suite_definition
+remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/suites/suite_test
 owner: chrisd
