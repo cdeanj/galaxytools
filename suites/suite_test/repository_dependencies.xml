@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <repositories description="testing.">
-    <repository name="chemical_data_sources" owner="bgruening" />
-    <repository name="openbabel" owner="bgruening" />
+    <repository name="coverage_sampler" owner="chrisd" />
+    <repository name="snipfinder" owner="chrisd" />
 </repositories>
