@@ -4,7 +4,7 @@
     <repository name="trimmomatic" owner="pjbriggs" />
     <repository name="samtool_filter2" owner="devteam" />
     <repository name="samtools_sort" owner="devteam" />
-    <repository name="metaphlan" owner="dannon" />
+    <repository name="metaphlan" owner="george-weingart" />
     <repository name="kraken" owner="devteam" />
     <repository name="fastqtofasta" owner="devteam" />
     <repository name="bam_to_sam" owner="devteam" />
