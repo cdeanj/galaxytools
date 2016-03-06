@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <repositories description="testing.">
-    <repository name="coverage_sampler" owner="chrisd" />
+    <repository name="bwa" owner="devteam" />
     <repository name="snipfinder" owner="chrisd" />
+    <repository name="coverage_sampler" owner="chrisd" />
 </repositories>
