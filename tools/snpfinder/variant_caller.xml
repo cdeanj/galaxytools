@@ -1,0 +1,54 @@
+<tool id="snp_caller" name="Snip Finder" version="0.1.0">
+    <requirements>
+        <requirement type="package" version="0.1">snp_caller</requirement>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+    <description> Identifies snips for both single-end and paired-end data</description>
+    <command><![CDATA[
+	snp
+	    -amr_fp $input1
+	    #if $sam_type.mode == "single_end"
+	    -samse $sam_type.samse_input2
+	    $sam_type.best
+	    #else
+	    -sampe $sam_type.sampe_input2
+	    $sam_type.best
+	    #end if
+	    -out_fp $output1
+    ]]></command>
+    <inputs>
+	<param type="data" name="input1" format="fasta" label="Reference sequence"/>
+	<conditional name="sam_type">
+	    <param name="mode" type="select" label="SAM file type">
+	        <option value="single_end"></option>
+		<option value="paired_end"></option>
+	    </param>
+	    <when value="single_end">
+	        <param type="data" name="samse_input2" format="sam" label="Single-end SAM file"/>
+		<param name="best" type="boolean" label="Filter on unique alignments"
+                       truevalue="-b" falsevalue="" />
+	    </when>
+	    <when value="paired_end">
+		<param type="data" name="sampe_input2" format="sam" label="Paired-end SAM file"/>
+		<param name="best" type="boolean" label="Filter on unique alignments"
+		       truevalue="-b" falsevalue="" />
+	    </when>
+	</conditional>
+    </inputs>
+    <outputs>
+	<data name="output1" format="tabular" />
+    </outputs>
+    <help><![CDATA[
+This program parses a SAM file and looks for single nucleotide polymorphisms (SNPs). In single-end mode, only alignments with bit four not set are considered. In paired-end mode, only reads that mapped in a proper pair are considered. When filtering on unique alignments, only alignments with the XT:A:U field are considered.
+Program: SNP Caller
+Contact: Chris Dean <cdean11@rams.colostate.edu>
+Usage: snp [options]
+Options:
+    -amr_fp	amr database path
+    -samse	single-end sam file path
+    -sampe	paired-end sam file path
+    -b		filter on unique alignments
+    ]]></help>
+</tool>
