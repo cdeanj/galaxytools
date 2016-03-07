@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<repositories description="This is a metapackage that contains various metagenomic and utility tools.">
+    <repository name="bwa" owner="devteam" />
+    <repository name="trimmomatic" owner="pjbriggs" />
+    <repository name="samtool_filter2" owner="devteam" />
+    <repository name="samtools_sort" owner="devteam" />
+    <repository name="metaphlan" owner="george-weingart" />
+    <repository name="kraken" owner="devteam" />
+    <repository name="fastqtofasta" owner="devteam" />
+    <repository name="bam_to_sam" owner="devteam" />
+    <repository name="snipfinder" owner="chrisd" />
+    <repository name="coverage_sampler" owner="chrisd" />
+</repositories>
