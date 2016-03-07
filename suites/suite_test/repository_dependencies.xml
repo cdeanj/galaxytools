@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<repositories description="testing.">
+<repositories description="This is a metapackage that contains various metagenomic and utility tools.">
     <repository name="bwa" owner="devteam" />
     <repository name="trimmomatic" owner="pjbriggs" />
     <repository name="samtool_filter2" owner="devteam" />
