@@ -1,5 +1,5 @@
 <tool id="snp_caller" name="Snip Finder" version="0.1.0">
-    <description> Identifies snips for both single-end and paired-end data</description>
+    <description>Identifies snips for both single-end and paired-end data</description>
     <requirements>
         <requirement type="package" version="0.1">snp_caller</requirement>
     </requirements>
@@ -54,9 +54,13 @@
     </tests>
     <help><![CDATA[
 This program parses a SAM file and looks for single nucleotide polymorphisms (SNPs). In single-end mode, only alignments with bit four not set are considered. In paired-end mode, only reads that mapped in a proper pair are considered. When filtering on unique alignments, only alignments with the XT:A:U field are considered.
+
 Program: snpfinder
+
 Contact: Chris Dean <cdean11@rams.colostate.edu>
+
 Usage: snp [options]
+
 Options:
     -amr_fp	amr database path
     -samse	single-end sam file path
