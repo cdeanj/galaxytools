@@ -1,0 +1,6 @@
+categories: [Assembly]
+description: Contains a workflow for analyzing metagenomic sequence data.
+name: workflow_test
+type: repository_suite_definition
+remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/workflows/amrplusplus
+owner: chrisd
