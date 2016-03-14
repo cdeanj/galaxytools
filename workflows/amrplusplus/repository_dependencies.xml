@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
-<repositories description="">
-    <repository name="suite_amrplusplus" owner="chrisd" />
+<repositories description="A meta-package of tools needed to run the workflow">
+    <repository name="suite_test" owner="chrisd" />
 </repositories>
