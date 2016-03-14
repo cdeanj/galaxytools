@@ -2,8 +2,7 @@
 <repositories description="This is a metapackage that contains various metagenomic and utility tools.">
     <repository name="bwa" owner="devteam" />
     <repository name="trimmomatic" owner="pjbriggs" />
-    <repository name="samtool_filter2" owner="devteam" />
-    <repository name="samtools_sort" owner="devteam" />
+    <repository name="picard" owner="devteam" />
     <repository name="metaphlan" owner="george-weingart" />
     <repository name="kraken" owner="devteam" />
     <repository name="data_manager_build_kraken_database" owner="devteam" />
