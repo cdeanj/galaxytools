@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <repositories description="This is a metapackage that contains various metagenomic and utility tools.">
-    <repository name="bwa" owner="devteam" />
+    <repository toolshed="toolshed.g2.bx.psu.edu" name="bwa" owner="devteam" changeset_revision="546ada4a9f43" />
     <repository name="trimmomatic" owner="pjbriggs" />
     <repository name="picard" owner="devteam" />
     <repository name="metaphlan" owner="george-weingart" />
