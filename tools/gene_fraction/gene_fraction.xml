@@ -25,7 +25,7 @@
 	<param name="max" type="integer" label="Ending sample level"
 	       value="1" min="1" max="100" help="(-max)" />
 	<param name="threshold" type="integer" label="Gene threshold"
-	       value="1" min="1" max="100" help="(-t)" />
+	       value="0" min="0" max="100" help="(-t)" />
 	<param name="skip" type="integer" label="Amount of levels to skip"
 	       value="1" min="1" max="100" help="(-skip)" />
 	<param name="samples" type="integer" label="Amount of samples per level"
@@ -44,9 +44,12 @@
     <help><![CDATA[
 This program takes iterative samples from a SAM file with the goal of identifying the amount of a gene that is covered by a sample of reads.
         
-Program: Coverage Sampler 
-Contact: Chris Dean <cdean11@rams.colostate.edu
+Program: Coverage Sampler
+
+Contact: Chris Dean <cdean11@rams.colostate.edu>
+
 Usage: csa [options]
+
 Options:
     -amr_fp    amr database path
     -sam_fp    sam file path
@@ -55,8 +58,6 @@ Options:
     -skip      amount of levels to skip
     -t         gene fraction threshold
     -samples   amount of samples per level
-    -d         directory parsing
-    -bam       bam file parsing
     -out_fp    output file path
     ]]></help>
 </tool>
