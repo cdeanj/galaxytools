@@ -2,4 +2,4 @@ categories: [Assembly]
 description: coverage_sampler
 name: coverage_sampler
 owner: chrisd
-remote_repository_url: https://github.com/ChrisD11/
+remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/gene_fraction
