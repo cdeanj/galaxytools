@@ -2,6 +2,6 @@ name: snipfinder
 owner: chrisd
 categories: [Variant Analysis]
 description: Snip caller for single and paired-end alignments.
-long_description: This is a snip caller for single and paired sam files. For each alignment (or pair of alignments), snips are recorded and represented as a single haplotype.
+long_description: This is a snip caller for single and paired-end alignments. For each alignment (or pair of alignments), snips are recorded and represented as a single haplotype.
 type: unrestricted
 remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/snpfinder
