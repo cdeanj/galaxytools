@@ -1,5 +1,5 @@
 categories: [Assembly]
-description: coverage_sampler
+description: Calculates the amount of a gene that is covered from a sample of reads
 name: coverage_sampler
 owner: chrisd
 remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/gene_fraction
