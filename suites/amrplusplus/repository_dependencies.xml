@@ -8,5 +8,5 @@
     <repository changeset_revision="723b5b38d88a" name="fastqtofasta" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="af7c50162f0b" name="bam_to_sam" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="d9be5a7e70f5" name="snipfinder" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
-    <repository changeset_revision="72901052a829 "name="coverage_sampler" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="72901052a829" name="coverage_sampler" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
 </repositories>
