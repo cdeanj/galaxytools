@@ -3,7 +3,7 @@
     <repository changeset_revision="546ada4a9f43" name="bwa" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="f8a9a5eaca8a" name="trimmomatic" owner="pjbriggs" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="efc56ee1ade4" name="picard" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
-    <repository changeset_revision="e951f9d38339" name="metaphlan" owner="dannon" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="e88fa24fa837" name="metaphlan" owner="dannon" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="1bcf0e168661" name="suite_kraken_0_10_5" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="723b5b38d88a" name="fastqtofasta" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="af7c50162f0b" name="bam_to_sam" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
