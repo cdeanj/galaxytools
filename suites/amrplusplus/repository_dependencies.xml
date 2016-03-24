@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<repositories description="This is a metapackage that contains various metagenomic and utility tools.">
+<repositories description="This is a metapackage that contains various metagenomic and utility tools used to run the AmrPlusPlus workflow.">
     <repository changeset_revision="546ada4a9f43" name="bwa" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
-    <repository name="trimmomatic" owner="pjbriggs" />
-    <repository name="picard" owner="devteam" />
-    <repository name="metaphlan" owner="george-weingart" />
-    <repository name="suite_kraken_0_10_5" owner="devteam" />
-    <repository name="fastqtofasta" owner="devteam" />
-    <repository name="bam_to_sam" owner="devteam" />
-    <repository name="snipfinder" owner="chrisd" />
-    <repository name="coverage_sampler" owner="chrisd" />
+    <repository changeset_revision="f8a9a5eaca8a" name="trimmomatic" owner="pjbriggs" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="efc56ee1ade4" name="picard" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="e951f9d38339" name="metaphlan" owner="dannon" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="1bcf0e168661" name="suite_kraken_0_10_5" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="723b5b38d88a" name="fastqtofasta" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="af7c50162f0b" name="bam_to_sam" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="d9be5a7e70f5" name="snipfinder" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="72901052a829 "name="coverage_sampler" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
 </repositories>
