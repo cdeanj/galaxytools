@@ -1,7 +1,8 @@
-amrPlusPlus Wrappers, Suites, and Workflow
-==========================================
-This repository contains the tool wrappers and tool suites needed to run the amrPlusPlus workflow.
+AmrPlusPlus Introduction
+========================
+AmrPlusPlus is a web-based Galaxy workflow that can be used to identify and characterize resistance and virulence genes in metagenomics sequence data.
 
-Availability
-============
-[https://github.com/cdeanj/galaxytools](https://github.com/cdeanj/galaxytools)
+Repository Structure
+====================
+The tools folder contains wrappers for tools located on Galaxy's Main Tool Shed. The suites folder contains repository dependencies for the amrplusplus suite. The workflow folder contains repository dependencies for the amrplusplus workflow.
+
