@@ -1,15 +1,18 @@
 What is this?
 =============
-This is a suite that contains a collection of tools which can be used to analyze diverse microbial populations.
+
+This is a suite that contains a collection of tools which can be used to analyze metagenomic sequence data.
 
 Availability
 ============
 
 The workflow and the tools needed to run the workflow can be downloaded from Galaxy's main toolshed
-[https://toolshed.g2.bx.psu.edu/view/chrisd/amrplusplus_workflow/](https://toolshed.g2.bx.psu.edu/view/chrisd/amrplusplus_workflow/11cb57237849)
+
+https://toolshed.g2.bx.psu.edu/view/chrisd/amrplusplus_workflow/
 
 Development is being done on GitHub
-[https://github.com/cdeanj/galaxytools](https://github.com/cdeanj/galaxytools)
+
+https://github.com/cdeanj/galaxytools/tree/master/workflows/amrplusplus
 
 MIT License
 ===========
