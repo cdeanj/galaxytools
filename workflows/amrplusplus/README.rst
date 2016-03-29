@@ -1,7 +1,9 @@
 What is this?
 =============
 
-This is a suite that contains a collection of tools which can be used to analyze metagenomic sequence data.
+This is a suite that contains a collection of tools which can be used to identify and characterize resistance and virulence genes.
+
+.. image:: https://raw.githubusercontent.com/cdeanj/galaxytools/master/workflows/amrplusplus/workflow.jpeg
 
 Availability
 ============
