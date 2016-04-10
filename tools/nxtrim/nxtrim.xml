@@ -4,7 +4,7 @@
 		<exit_code range="1:" />
 	</stdio>
 	<command><![CDATA[
-		__tool_directory__/nxtrim
+		nxtrim
 			-1 $ff
 			-2 $fr
 			$jr
