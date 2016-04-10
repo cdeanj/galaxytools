@@ -4,7 +4,7 @@
 		<exit_code range="1:" />
 	</stdio>
 	<command><![CDATA[
-		nxtrim
+		__tool_directory__/nxtrim
 			-1 $ff
 			-2 $fr
 			$jr
@@ -28,4 +28,29 @@
 		<param name="minoverlap" type="integer" label="The minimum overlap to be considered for matching" value="12" min="0" max="100" />
 		<param name="minlength" type="integer" label="The minimum read length to output (smaller reads will be filtered)" value="21" min="0" max="100" />
 	</inputs>
+	<outputs>
+	</outputs>
+	<tests>
+		<test>
+		</test>
+	</tests>
+
+	<help><![CDATA[
+Required arguments:
+	-1 [ --r1 ] arg     		read 1 in fastq format (gzip allowed)
+  	-2 [ --r2 ] arg     		read 2 in fastq format (gzip allowed)
+Allowed options:
+  	--justmp        		just creates the mp/unknown libraries (reads with adapter at the start will be completely N masked)
+  	--joinreads     		try to merge overhangs from R2 with R1 (default: no joining)
+  	--norc          		do NOT reverse-complement mate-pair reads (use this if your reads are already in FR orientation)
+  	--preserve-mp   		preserve MPs even when the corresponding PE has longer reads
+  	--ignorePF      		ignore chastity/purity filters in read headers
+  	--separate      		output paired reads in separate files (prefix_R1/prefix_R2). Default is interleaved
+  	--similarity arg (=0.85)    	The minimum similarity between strings to be considered a match.
+  	--minoverlap arg (=12)		The minimum overlap to be considered for matching
+  	--minlength arg (=21)		The minimum read length to output (smaller reads will be filtered)
+	]]></help>
+
+	<citations>
+	</citations>
 </tool>
