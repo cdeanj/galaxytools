@@ -4,17 +4,18 @@
 		<exit_code range="1:" />
 	</stdio>
 	<command><![CDATA[
-		nxtrim
-			-1 $ff
-			-2 $fr
-			$jr
-			$norc
-			$pmp
-			$ipf
-			$sep
-			-s $similarity
-			-v $minoverlap
-			-i $minlength
+		$__tool_directory__/nxtrim
+                        -1 $ff
+                        -2 $fr
+                        $jr
+                        $norc
+                        $pmp
+                        $ipf
+                        $sep
+                        -s $similarity
+                        -v $minoverlap
+                        -l $minlength
+                        -O $output
 	]]></command>
 	<inputs>
 		<param type="data" name="ff" format="fastq" label="Read 1 in fastq format (gzip allowed)" />
@@ -24,33 +25,32 @@
 		<param name="pmp" type="boolean" truevalue="--preserve-mp" falsevalue="" label="Preserve MPs even when the corresponding PE has longer reads" />
 		<param name="ipf" type="boolean" truevalue="--ignorePF" falsevalue="" label="Ignore chastity/purity filters in read headers" />
 		<param name="sep" type="boolean" truevalue="--separate" falsevalue="" label="Output paired reads in separate files (prefix_R1/prefix_R2). Default is interleaved." />
-		<param name="similarity" type="float" label="The minimum similarity between strings to be considered a match" value="0.85" min="0" max="1" />
-		<param name="minoverlap" type="integer" label="The minimum overlap to be considered for matching" value="12" min="0" max="100" />
-		<param name="minlength" type="integer" label="The minimum read length to output (smaller reads will be filtered)" value="21" min="0" max="100" />
+		<param name="similarity" type="float" label="The minimum similarity between strings to be considered a match" value=".85" />
+		<param name="minoverlap" type="integer" label="The minimum overlap to be considered for matching" value="12" />
+		<param name="minlength" type="integer" label="The minimum read length to output (smaller reads will be filtered)" value="21" />
 	</inputs>
 	<outputs>
+		<!--
+		<data format="fastq" name="output">
+			<discover_datasets pattern="(?P&lt;designation&gt;.+)\.fastq\.gz" ext="fastq" visible="true" />
+		</data>
+		-->
+		<collection name="splitted_fasta" type="list" label="Sequence collection in FASTA format">
+            		<discover_datasets pattern="(?P&lt;designation&gt;.*)" directory="split" ext="fastq" visible="true"/>
+        	</collection>
 	</outputs>
-	<tests>
-		<test>
-		</test>
-	</tests>
 
-	<help><![CDATA[
-Required arguments:
-	-1 [ --r1 ] arg     		read 1 in fastq format (gzip allowed)
-  	-2 [ --r2 ] arg     		read 2 in fastq format (gzip allowed)
-Allowed options:
-  	--justmp        		just creates the mp/unknown libraries (reads with adapter at the start will be completely N masked)
-  	--joinreads     		try to merge overhangs from R2 with R1 (default: no joining)
-  	--norc          		do NOT reverse-complement mate-pair reads (use this if your reads are already in FR orientation)
-  	--preserve-mp   		preserve MPs even when the corresponding PE has longer reads
-  	--ignorePF      		ignore chastity/purity filters in read headers
-  	--separate      		output paired reads in separate files (prefix_R1/prefix_R2). Default is interleaved
-  	--similarity arg (=0.85)    	The minimum similarity between strings to be considered a match.
-  	--minoverlap arg (=12)		The minimum overlap to be considered for matching
-  	--minlength arg (=21)		The minimum read length to output (smaller reads will be filtered)
-	]]></help>
+	<help>
+<![CDATA[
 
-	<citations>
-	</citations>
+**What it does**
+
+nxtrim is a software tool to that removes Nextera Mate Pair adapters and categorises reads according to the orientation implied by the adapter location.
+
+**Input**
+
+Input data is two fastq (or .gz) files.
+
+]]>
+	</help>
 </tool>
