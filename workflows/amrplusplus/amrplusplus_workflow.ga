@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "aa", 
+    "name": "amrplusplus workflow", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -27,8 +27,14 @@
             "tool_state": "{\"name\": \"FASTQ Forward\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "9c1f5852-9697-40e2-bc6f-7ac65ad647ce", 
-            "workflow_outputs": []
+            "uuid": "f1e841db-6f7a-4f32-bd87-8d0d934c4cc1", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "ad47f164-7e7a-4d22-a967-551b2378427a"
+                }
+            ]
         }, 
         "1": {
             "annotation": "", 
@@ -53,8 +59,14 @@
             "tool_state": "{\"name\": \"FASTQ Reverse\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "030bf3fc-ee71-46c4-bfcf-8d963c04a478", 
-            "workflow_outputs": []
+            "uuid": "a24ee7c0-b919-4426-8866-7d9939536e12", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "edba093d-cdda-4530-916e-a566d94e2040"
+                }
+            ]
         }, 
         "2": {
             "annotation": "", 
@@ -79,8 +91,14 @@
             "tool_state": "{\"name\": \"Host Genome\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "95f884fc-215e-4d54-8212-e43be8a779b5", 
-            "workflow_outputs": []
+            "uuid": "96c8f450-cb64-4641-884a-c1dabceeff5d", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "2fb141c8-5d0b-4044-906d-adaa7a07f66e"
+                }
+            ]
         }, 
         "3": {
             "annotation": "", 
@@ -105,8 +123,14 @@
             "tool_state": "{\"name\": \"AMR Database\"}", 
             "tool_version": null, 
             "type": "data_input", 
-            "uuid": "8a65e391-b837-41ef-9575-bedf5294da9e", 
-            "workflow_outputs": []
+            "uuid": "2615ede9-3d0a-422b-b04d-829157475d47", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "32fcc9ba-8864-4fa7-a337-917a9612844a"
+                }
+            ]
         }, 
         "4": {
             "annotation": "", 
@@ -197,77 +221,24 @@
             "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"window_size\\\": \\\"4\\\", \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"__current_case__\\\": 0, \\\"required_quality\\\": \\\"20\\\"}}]\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"paired_end\": \"{\\\"is_paired_end\\\": \\\"true\\\", \\\"paired_input_type_conditional\\\": {\\\"paired_input_type\\\": \\\"pair_of_files\\\", \\\"fastq_r1_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fastq_r2_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, \\\"__current_case__\\\": 1}\", \"illuminaclip\": \"{\\\"do_illuminaclip\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
             "tool_version": "0.32.3", 
             "type": "tool", 
-            "uuid": "0d5a87ee-c6a3-4bd1-b416-226d0e4783ab", 
+            "uuid": "c943ae63-aa6c-4d42-9088-b08335b8b6c6", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "fastq_out_r1_paired", 
-                    "uuid": "6e06861e-a08e-4fbf-bdd6-daa51499d669"
+                    "uuid": "e5cb04a2-09b6-41e5-b93d-54c4c6c8e488"
                 }, 
                 {
                     "label": null, 
                     "output_name": "fastq_out_r2_paired", 
-                    "uuid": "1b2d0dd4-d1ce-4886-b300-8df03d3918fa"
+                    "uuid": "ada191c5-9f20-4052-aa5e-03f73f9587ad"
                 }
             ]
         }, 
         "5": {
             "annotation": "", 
-            "content_id": "toolshed.g2.bx.psu.edu/repos/chrisd/snipfinder/snp_caller/0.1.0", 
-            "id": 5, 
-            "input_connections": {
-                "input1": {
-                    "id": 3, 
-                    "output_name": "output"
-                }
-            }, 
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Snip Finder", 
-                    "name": "sam_type"
-                }, 
-                {
-                    "description": "runtime parameter for tool Snip Finder", 
-                    "name": "input1"
-                }
-            ], 
-            "label": null, 
-            "name": "Snip Finder", 
-            "outputs": [
-                {
-                    "name": "output1", 
-                    "type": "tabular"
-                }
-            ], 
-            "position": {
-                "left": 1368, 
-                "top": 551
-            }, 
-            "post_job_actions": {}, 
-            "tool_errors": null, 
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/chrisd/snipfinder/snp_caller/0.1.0", 
-            "tool_shed_repository": {
-                "changeset_revision": "d9be5a7e70f5", 
-                "name": "snipfinder", 
-                "owner": "chrisd", 
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            }, 
-            "tool_state": "{\"sam_type\": \"{\\\"best\\\": \\\"false\\\", \\\"mode\\\": \\\"paired_end\\\", \\\"__current_case__\\\": 1, \\\"sampe_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
-            "tool_version": "0.1.0", 
-            "type": "tool", 
-            "uuid": "e4564c96-a500-4017-a222-fc0e55a23b20", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output1", 
-                    "uuid": "44843c44-7cf5-4738-9b48-60ad16b8d915"
-                }
-            ]
-        }, 
-        "6": {
-            "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.12.1", 
-            "id": 6, 
+            "id": 5, 
             "input_connections": {
                 "input_type|fastq_input1": {
                     "id": 4, 
@@ -320,22 +291,22 @@
             "tool_state": "{\"__page__\": 0, \"input_type\": \"{\\\"adv_pe_options\\\": {\\\"__current_case__\\\": 1, \\\"adv_pe_options_selector\\\": \\\"do_not_set\\\"}, \\\"fastq_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"input_type_selector\\\": \\\"paired\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"do_not_set\\\", \\\"__current_case__\\\": 3}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"index_a\\\": \\\"auto\\\"}\"}", 
             "tool_version": "0.7.12.1", 
             "type": "tool", 
-            "uuid": "880e395c-e063-4ae9-803c-b1961ef0a4fd", 
+            "uuid": "3c509fb7-aef9-4e6d-bbb7-f6099d71f15e", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "bam_output", 
-                    "uuid": "8b9ad567-40bb-4533-9342-ca2c7a57326a"
+                    "uuid": "d7011177-89c7-48ac-928e-935c6eecf92d"
                 }
             ]
         }, 
-        "7": {
+        "6": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/brenninc/samtools_flag_filter_1_2/samtools_flag_filter/0.1", 
-            "id": 7, 
+            "id": 6, 
             "input_connections": {
                 "input": {
-                    "id": 6, 
+                    "id": 5, 
                     "output_name": "bam_output"
                 }
             }, 
@@ -369,22 +340,22 @@
             "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"bits\": \"[{\\\"__index__\\\": 0, \\\"flag\\\": \\\"0x0004\\\", \\\"state\\\": \\\"f\\\"}]\", \"__page__\": 0}", 
             "tool_version": "0.1", 
             "type": "tool", 
-            "uuid": "aa177899-8618-4afb-b484-e2a9eb616f04", 
+            "uuid": "e31b4dcc-9623-4c50-8139-214e40fe29d0", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output", 
-                    "uuid": "a960b5e7-cb47-4afb-9688-3a787b4813a5"
+                    "uuid": "c9c36760-d2a9-4c05-808c-05a092260670"
                 }
             ]
         }, 
-        "8": {
+        "7": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.12.1", 
-            "id": 8, 
+            "id": 7, 
             "input_connections": {
                 "input_type|bam_input": {
-                    "id": 7, 
+                    "id": 6, 
                     "output_name": "output"
                 }, 
                 "reference_source|ref_file": {
@@ -426,22 +397,22 @@
             "tool_state": "{\"__page__\": 0, \"input_type\": \"{\\\"bam_input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 3, \\\"input_type_selector\\\": \\\"paired_bam\\\", \\\"adv_bam_pe_options\\\": {\\\"__current_case__\\\": 1, \\\"adv_pe_options_selector\\\": \\\"do_not_set\\\"}}\", \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"do_not_set\\\", \\\"__current_case__\\\": 3}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"index_a\\\": \\\"auto\\\"}\"}", 
             "tool_version": "0.7.12.1", 
             "type": "tool", 
-            "uuid": "91a7471e-ee8d-4f6f-8002-d0914dd8df57", 
+            "uuid": "4dff04dd-4331-4390-a21d-64140a177ce4", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "bam_output", 
-                    "uuid": "70c657a7-61ce-4c52-a5b4-564eddd9e79e"
+                    "uuid": "341955c7-7ae9-4872-a52a-f6b2f298cba1"
                 }
             ]
         }, 
-        "9": {
+        "8": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0", 
-            "id": 9, 
+            "id": 8, 
             "input_connections": {
                 "input1": {
-                    "id": 8, 
+                    "id": 7, 
                     "output_name": "bam_output"
                 }
             }, 
@@ -475,22 +446,22 @@
             "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sort_mode\": \"\\\"-n\\\"\"}", 
             "tool_version": "2.0", 
             "type": "tool", 
-            "uuid": "62d071ac-483d-43d0-a7a2-59cd7c41ee39", 
+            "uuid": "97ca7254-d03b-4cf3-810c-7dbaa6f65e72", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output1", 
-                    "uuid": "b6efbbfd-4e6b-410c-a99d-f8dd4e600ea9"
+                    "uuid": "7b4416a5-ff90-4d1a-83c3-24c44e77f640"
                 }
             ]
         }, 
-        "10": {
+        "9": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam/2.0", 
-            "id": 10, 
+            "id": 9, 
             "input_connections": {
                 "input1": {
-                    "id": 9, 
+                    "id": 8, 
                     "output_name": "output1"
                 }
             }, 
@@ -524,12 +495,69 @@
             "tool_state": "{\"header\": \"\\\"-h\\\"\", \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}", 
             "tool_version": "2.0", 
             "type": "tool", 
-            "uuid": "5076f37b-5da6-44a3-a3b2-f4172d547dc3", 
+            "uuid": "5196c387-3fad-46dc-9e6f-63af7ffae562", 
             "workflow_outputs": [
                 {
                     "label": null, 
                     "output_name": "output1", 
-                    "uuid": "4b52f2d0-1a66-408a-bc99-0da79cc8542f"
+                    "uuid": "a4536845-4aaa-4a65-bc1b-e235f762a742"
+                }
+            ]
+        }, 
+        "10": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/chrisd/snipfinder/snp_caller/0.1.0", 
+            "id": 10, 
+            "input_connections": {
+                "input1": {
+                    "id": 3, 
+                    "output_name": "output"
+                }, 
+                "sam_type|sampe_input2": {
+                    "id": 9, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Snip Finder", 
+                    "name": "sam_type"
+                }, 
+                {
+                    "description": "runtime parameter for tool Snip Finder", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Snip Finder", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 1368, 
+                "top": 551
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/chrisd/snipfinder/snp_caller/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "d9be5a7e70f5", 
+                "name": "snipfinder", 
+                "owner": "chrisd", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"sam_type\": \"{\\\"best\\\": \\\"false\\\", \\\"mode\\\": \\\"paired_end\\\", \\\"__current_case__\\\": 1, \\\"sampe_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "3c0b1793-8625-4529-a406-6ffa822b38ab", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output1", 
+                    "uuid": "b58e3331-4b37-49d9-b311-1120ca9606e6"
                 }
             ]
         }, 
@@ -543,7 +571,7 @@
                     "output_name": "output"
                 }, 
                 "input2": {
-                    "id": 10, 
+                    "id": 9, 
                     "output_name": "output1"
                 }
             }, 
@@ -587,9 +615,9 @@
             "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min\": \"\\\"5\\\"\", \"max\": \"\\\"100\\\"\", \"__rerun_remap_job_id__\": null, \"samples\": \"\\\"1\\\"\", \"skip\": \"\\\"5\\\"\", \"threshold\": \"\\\"80\\\"\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
-            "uuid": "a79d4e7c-dc9c-45fc-bc5f-e07c8289dc6c", 
+            "uuid": "0907193f-3458-40a1-b0ba-beac3998da62", 
             "workflow_outputs": []
         }
     }, 
-    "uuid": "882a41f1-f16c-4e06-a19b-21a5ffc1fd36"
+    "uuid": "5f790d55-b08b-45e8-8471-005678ec4eef"
 }
