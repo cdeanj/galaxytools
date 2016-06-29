@@ -69,20 +69,14 @@ that was covered from a random sampling of alignments.
 
 **Options**
 
-min		This parameter specifies the starting sample level for the program. For example, a min value
-		of five tells the program to begin by taking five percent of alignments from the alignment file.
+Options: -q INT    mask bases with quality lower than INT [0]
+         -X INT    mask bases with quality higher than INT [255]
 
-max		This parameter specifies the ending sample level for the program.
-
-skip		This parameter specifies the amount of levels to skip between min and max. For example,
-		if you specify a min value of five, a max value of 100, and a skip value of five, then 
-		you would be sampling alignments in intervals of five.
-
-t		This parameter specifies a threshold value. Only genes having a gene fraction greater than
-		this value are provided as output.
-
-samples		This parameter specifies the amount of iterations you would like to sample at. For example, 
-		a sample value of five would sample each level five times.
+Options: -min     INT    Starting level to sample reads from (level is in percent)
+         -max     INT    Ending level to sample reads from (level is in percent)
+         -skip    INT    Number of levels to skip
+         -t       INT    Gene fraction threshold (only genes with a gene fraction greater than this threshold are output)
+         -samples INT    Number of iterations per sample level
 
 ------
 
@@ -91,11 +85,11 @@ samples		This parameter specifies the amount of iterations you would like to sam
 Output of this program is a tab delimited text file with following:
 
 Column	Description
-Level	The sampling level alignments were taken at
+Level		The sampling level alignments were taken at
 Iteration	The ith iteration of the current sampling level
-Gene Id	The reference sequence having a gene fraction greater than threshold
+Gene Id		The reference sequence having a gene fraction greater than threshold
 Gene Fraction	The overall fraction of the gene that was covered from the sample of alignments
-Hits	The amount of times that the reference sequence was seen from the sample of alignments
+Hits		The amount of times that the reference sequence was seen from the sample of alignments
 
 ------
 
@@ -105,8 +99,7 @@ Development is being done on github_
 
 .. _github: https://github.com/cdeanj/coverage_sampler
 
-]]>
-    </help>
+ ]]></help>
     <citations>
     </citations>
 </tool>
