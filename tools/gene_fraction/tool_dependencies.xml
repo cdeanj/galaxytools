@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <tool_dependency>
-    <package name="csa" version="0.1">
-        <install version="1.0">
+    <package name="csa" version="0.2">
+        <install version="2.0">
             <actions>
                 <action type="shell_command">git clone --recursive https://github.com/cdeanj/coverage_sampler.git</action>
                 <action type="shell_command">make</action>
