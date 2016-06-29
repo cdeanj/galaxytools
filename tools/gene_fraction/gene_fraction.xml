@@ -1,49 +1,64 @@
 <tool id="gene_fraction" name="Coverage Sampler" version="0.1.0">
+    <description>A simple tool for calculating the amount of a gene that is covered by a sample of reads</description>
     <requirements>
 	<requirement type="package" version="0.1">csa</requirement>
     </requirements>
     <stdio>
         <exit_code range="1:" />
     </stdio>
-    <description>Calculates the amount of a gene that is covered from a sample of reads</description>
     <command><![CDATA[
 	csa
-	  -amr_fp $input1
-	  -sam_fp $input2
+	  -ref_fp $reference
+	  -sam_fp $sam
 	  -min $min
 	  -max $max
 	  -t $threshold
 	  -skip $skip
 	  -samples $samples
-	  -out_fp $output1
+	  -out_fp $output
     ]]></command>
     <inputs>
-	<param type="data" name="input1" format="fasta" label="Reference sequence" />
-	<param type="data" name="input2" format="sam" label="SAM file" />
+	<param type="data" name="reference" format="fasta" label="Reference sequence" />
+	<param type="data" name="sam" format="sam" label="SAM file" />
 	<param name="min" type="integer" label="Starting sample level"
 	       value="1" min="1" max="100" help="(-min)" />
 	<param name="max" type="integer" label="Ending sample level"
 	       value="1" min="1" max="100" help="(-max)" />
-	<param name="threshold" type="integer" label="Gene threshold"
+	<param name="threshold" type="integer" label="Gene fraction threshold"
 	       value="0" min="0" max="100" help="(-t)" />
-	<param name="skip" type="integer" label="Amount of levels to skip"
+	<param name="skip" type="integer" label="Amount of sample levels to skip"
 	       value="1" min="1" max="100" help="(-skip)" />
-	<param name="samples" type="integer" label="Amount of samples per level"
+	<param name="samples" type="integer" label="Iterations per sample level"
 	       value="1" min="1" max="100" help="(-samples)" />
     </inputs>
     <outputs>
-	<data name="output1" format="tabular" />
+	<data name="output" format="tabular" />
     </outputs>
     <tests>
       <test>
-      <param name="input1" value="ref.fa"/>
-      <param name="input2" value="test.sam"/>
-      <output name="outfil1" file="out.txt"/>
+          <param name="reference" value="ref.fa"/>
+      	  <param name="sam" value="sampe.sam"/>
+	  <param name="min" value="100"/>
+	  <param name="max" value="100"/>
+	  <param name="threshold" value="50"/>
+	  <param name="skip" value="5"/>
+	  <param name="samples" value="1"/>
+      	  <output name="output" file="csa_result" ftype="tabular"/>
+      </test>
+      <test>
+	  <param name="reference" value="ref.fa"/>
+          <param name="sam" value="sampe.sam"/>
+          <param name="min" value="100"/>
+          <param name="max" value="100"/>
+          <param name="threshold" value="80"/>
+          <param name="skip" value="5"/>
+          <param name="samples" value="1"/>
+          <output name="output" file="csa_no_result" ftype="tabular"/>
       </test>
     </tests>
     <help><![CDATA[
-This program takes iterative samples from a SAM file with the goal of identifying the amount of a gene that is covered by a sample of reads.
-        
+A simple tool for calculating the amount of a gene that is covered by a sample of alignments.
+
 Program: Coverage Sampler
 
 Contact: Chris Dean <cdean11@rams.colostate.edu>
@@ -51,13 +66,15 @@ Contact: Chris Dean <cdean11@rams.colostate.edu>
 Usage: csa [options]
 
 Options:
-    -amr_fp    amr database path
-    -sam_fp    sam file path
-    -min       starting level
-    -max       ending level
-    -skip      amount of levels to skip
-    -t         gene fraction threshold
-    -samples   amount of samples per level
-    -out_fp    output file path
+    -ref_fp    STR/FILE	    ref file path
+    -sam_fp    STR/FILE	    sam file path
+    -min       INT      	starting sample level
+    -max       INT	        ending sample level
+    -skip      INT	        amount of sample levels to skip
+    -t         INT	        gene fraction threshold
+    -samples   INT	        iterations per sample level
+    -out_fp    STR/FILE	    output file path
     ]]></help>
+    <citations>
+    </citations>
 </tool>
