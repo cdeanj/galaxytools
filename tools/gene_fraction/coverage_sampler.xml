@@ -74,6 +74,8 @@ that was covered from a random sampling of alignments.
          -skip    INT    Number of levels to skip
          -t       INT    Gene fraction threshold (only genes with a gene fraction greater than this threshold are output)
          -samples INT    Number of iterations per sample level
+
+
 ------
 
 **Output**
