@@ -69,22 +69,25 @@ that was covered from a random sampling of alignments.
 
 **Options**
 
+- min		This parameter specifies the starting sample level for the program. For example, a min value
 
-  - min		This parameter specifies the starting sample level for the program. For example, a min value
 		of five tells the program to begin by taking five percent of alignments from the alignment file.
   
-  - max		This parameter specifies the ending sample level for the program.
+- max		This parameter specifies the ending sample level for the program.
 
-  - skip	This parameter specifies the amount of levels to skip between min and max. For example,
+- skip		This parameter specifies the amount of levels to skip between min and max. For example,
+
 		if you specify a min value of five, a max value of 100, and a skip value of five, then 
+
 		you would be sampling alignments in intervals of five.
 
-   - t		This parameter specifies a threshold value. Only genes having a gene fraction greater than
+- t		This parameter specifies a threshold value. Only genes having a gene fraction greater than
+
 		this value are provided as output.
 
-   - samples	This parameter specifies the amount of iterations you would like to sample at. For example, 
-		a sample value of five would sample each level five times.
+- samples	This parameter specifies the amount of iterations you would like to sample at. For example, 
 
+		a sample value of five would sample each level five times.
 
 ------
 
