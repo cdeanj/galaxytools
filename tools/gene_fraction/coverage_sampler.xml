@@ -90,11 +90,15 @@ that was covered from a random sampling of alignments.
 
 Output of this program is a tab delimited text file with following:
 
-  1  Level          The sampling level alignments were taken at
-  2  Iteration	    The ith iteration of the current sampling level
-  3  Gene Id	    The reference sequence having a gene fraction greater than threshold
-  4  Gene Fraction  The overall fraction of the gene that was covered from the sample of alignments
-  5  Hits           The amount of times that the reference sequence was seen from the sample of alignments
+1  Level           The sampling level alignments were taken at
+
+2  Iteration       The ith iteration of the current sampling level
+
+3  Gene Id         The reference sequence having a gene fraction greater than threshold
+
+4  Gene Fraction   The overall fraction of the gene that was covered from the sample of alignments
+
+5  Hits            The amount of times that the reference sequence was seen from the sample of alignments
 
 ------
 
@@ -103,6 +107,8 @@ Output of this program is a tab delimited text file with following:
 Development is being done on github_
 
 .. _github: https://github.com/cdeanj/coverage_sampler
+
+------
 
 ]]>
     </help>
