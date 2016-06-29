@@ -84,11 +84,11 @@ that was covered from a random sampling of alignments.
 
 A tab delimited text file with the following columns::
 
-    Level	The sampling levels alignments were taken at
-    Iteration	The iteration at each sample level
-    Gene Id	The reference name having a gene fraction greater than threshold
+    Level		The sampling level alignments were taken at
+    Iteration		The iteration number of the current sample level
+    Gene Id		The reference name having a gene fraction greater than threshold
     Gene Fraction	The gene fraction for the current reference sequence (in percent)
-    Hits	The amount of alignments associated with the reference sequence at the current sample level
+    Hits		The number of alignments associated with the reference sequence
 
 ------
 
