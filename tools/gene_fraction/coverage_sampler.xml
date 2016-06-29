@@ -61,11 +61,9 @@
 
 **Coverage sampler**
 
-Coverage sampler_ is a simple tool for calculating the amount of a gene that is covered by a sample of alignments. The tool takes
+Coverage sampler is a simple tool for calculating the amount of a gene that is covered by a sample of alignments. The tool takes
 in as input a fasta and alignment file. The output of this program is a tab delimited text file describing the fraction of each gene
 that was covered from a random sampling of alignments.
-
-.. _Coverage sampler: https://github.com/cdeanj/coverage_sampler
 
 ------
 
@@ -83,22 +81,28 @@ that was covered from a random sampling of alignments.
   -t		This parameter specifies a threshold value. Only genes having a gene fraction greater than
 		this value are provided as output.
 
-  -samples	This parameter specifies the amount of iterations you would like to sample at. For example, a
-		sample value of five would sample each level five times.
+  -samples	This parameter specifies the amount of iterations you would like to sample at. For example, 
+		a sample value of five would sample each level five times.
 
 ------
 
 **Output**
 
-  Output of this program is a tab delimited text file with following:
+Output of this program is a tab delimited text file with following:
 
-  1  Level            The sampling level alignments were taken at
-  2  Iteration	      The ith iteration of the current sampling level
-  3  Gene Id	      The reference sequence having a gene fraction greater than threshold
-  4  Gene Fraction    The overall fraction of the gene that was covered from the sample of alignments
-  5  Hits             The amount of times that the reference sequence was seen from the sample of alignments
+  1  Level          The sampling level alignments were taken at
+  2  Iteration	    The ith iteration of the current sampling level
+  3  Gene Id	    The reference sequence having a gene fraction greater than threshold
+  4  Gene Fraction  The overall fraction of the gene that was covered from the sample of alignments
+  5  Hits           The amount of times that the reference sequence was seen from the sample of alignments
 
 ------
+
+**Development**
+
+Development is being done on github_
+
+.. _github: https://github.com/cdeanj/coverage_sampler
 
 ]]>
     </help>
