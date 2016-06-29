@@ -1,7 +1,7 @@
-<tool id="gene_fraction" name="Coverage Sampler" version="0.2.0">
+<tool id="gene_fraction" name="Coverage Sampler" version="0.1.0">
     <description>A simple tool for calculating the amount of a gene that is covered by a sample of alignments</description>
     <requirements>
-	<requirement type="package" version="0.2">csa</requirement>
+	<requirement type="package" version="0.1">coverage_sampler</requirement>
     </requirements>
     <stdio>
         <exit_code range="1:" />
