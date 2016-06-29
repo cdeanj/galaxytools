@@ -6,7 +6,7 @@
                 <action type="shell_command">git clone --recursive https://github.com/cdeanj/coverage_sampler.git</action>
                 <action type="shell_command">make</action>
                 <action type="move_file">
-                    <source>coverage_sampler</source>
+                    <source>csa</source>
                     <destination>$INSTALL_DIR/bin</destination>
                 </action>
                 <action type="set_environment">
