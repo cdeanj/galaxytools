@@ -56,25 +56,52 @@
           <output name="output" file="csa_no_result" ftype="tabular"/>
       </test>
     </tests>
-    <help><![CDATA[
-A simple tool for calculating the amount of a gene that is covered by a sample of alignments.
+    <help>
+<![CDATA[
 
-Program: Coverage Sampler
+**Coverage sampler**
 
-Contact: Chris Dean <cdean11@rams.colostate.edu>
+Coverage sampler_ is a simple tool for calculating the amount of a gene that is covered by a sample of alignments. The tool takes
+in as input a fasta and alignment file. The output of this program is a tab delimited text file describing the fraction of each gene
+that was covered from a random sampling of alignments.
 
-Usage: csa [options]
+.. _Coverage sampler: https://github.com/cdeanj/coverage_sampler
 
-Options:
-    -ref_fp    STR/FILE	    	ref file path
-    -sam_fp    STR/FILE	    	sam file path
-    -min       INT      		starting sample level
-    -max       INT	        	ending sample level
-    -skip      INT	        	amount of sample levels to skip
-    -t         INT	        	gene fraction threshold
-    -samples   INT	        	iterations per sample level
-    -out_fp    STR/FILE	    	output file path
-    ]]></help>
+------
+
+**Options**
+
+  -min		This parameter specifies the starting sample level for the program. For example, a min value
+		of five tells the program to begin by taking five percent of alignments from the alignment file.
+  
+  -max		This parameter specifies the ending sample level for the program.
+
+  -skip		This parameter specifies the amount of levels to skip between min and max. For example,
+		if you specify a min value of five, a max value of 100, and a skip value of five, then 
+		you would be sampling alignments in intervals of five.
+
+  -t		This parameter specifies a threshold value. Only genes having a gene fraction greater than
+		this value are provided as output.
+
+  -samples	This parameter specifies the amount of iterations you would like to sample at. For example, a
+		sample value of five would sample each level five times.
+
+------
+
+**Output**
+
+  Output of this program is a tab delimited text file with following:
+
+  1  Level            The sampling level alignments were taken at
+  2  Iteration	      The ith iteration of the current sampling level
+  3  Gene Id	      The reference sequence having a gene fraction greater than threshold
+  4  Gene Fraction    The overall fraction of the gene that was covered from the sample of alignments
+  5  Hits             The amount of times that the reference sequence was seen from the sample of alignments
+
+------
+
+]]>
+    </help>
     <citations>
     </citations>
 </tool>
