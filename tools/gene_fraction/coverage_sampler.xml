@@ -69,10 +69,7 @@ that was covered from a random sampling of alignments.
 
 **Options**
 
-Options: -q INT    mask bases with quality lower than INT [0]
-         -X INT    mask bases with quality higher than INT [255]
-
-Options: -min     INT    Starting level to sample reads from (level is in percent)
+         -min     INT    Starting level to sample reads from (level is in percent)
          -max     INT    Ending level to sample reads from (level is in percent)
          -skip    INT    Number of levels to skip
          -t       INT    Gene fraction threshold (only genes with a gene fraction greater than this threshold are output)
