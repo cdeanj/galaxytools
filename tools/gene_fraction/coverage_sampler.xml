@@ -69,20 +69,20 @@ that was covered from a random sampling of alignments.
 
 **Options**
 
-  -min			This parameter specifies the starting sample level for the program. For example, a min value
-			of five tells the program to begin by taking five percent of alignments from the alignment file.
+  -min		This parameter specifies the starting sample level for the program. For example, a min value
+		of five tells the program to begin by taking five percent of alignments from the alignment file.
   
-  -max			This parameter specifies the ending sample level for the program.
+  -max		This parameter specifies the ending sample level for the program.
 
-  -skip			This parameter specifies the amount of levels to skip between min and max. For example,
-			if you specify a min value of five, a max value of 100, and a skip value of five, then 
-			you would be sampling alignments in intervals of five.
+  -skip		This parameter specifies the amount of levels to skip between min and max. For example,
+		if you specify a min value of five, a max value of 100, and a skip value of five, then 
+		you would be sampling alignments in intervals of five.
 
-  -t			This parameter specifies a threshold value. Only genes having a gene fraction greater than
-			this value are provided as output.
+   -t		This parameter specifies a threshold value. Only genes having a gene fraction greater than
+		this value are provided as output.
 
-  -samples		This parameter specifies the amount of iterations you would like to sample at. For example, 
-			a sample value of five would sample each level five times.
+   -samples	This parameter specifies the amount of iterations you would like to sample at. For example, 
+		a sample value of five would sample each level five times.
 
 ------
 
@@ -90,15 +90,15 @@ that was covered from a random sampling of alignments.
 
 Output of this program is a tab delimited text file with following:
 
-1  Level           The sampling level alignments were taken at
+   Level		The sampling level alignments were taken at
 
-2  Iteration       The ith iteration of the current sampling level
+   Iteration		The ith iteration of the current sampling level
 
-3  Gene Id         The reference sequence having a gene fraction greater than threshold
+   Gene Id		The reference sequence having a gene fraction greater than threshold
 
-4  Gene Fraction   The overall fraction of the gene that was covered from the sample of alignments
+   Gene Fraction	The overall fraction of the gene that was covered from the sample of alignments
 
-5  Hits            The amount of times that the reference sequence was seen from the sample of alignments
+   Hits			The amount of times that the reference sequence was seen from the sample of alignments
 
 ------
 
