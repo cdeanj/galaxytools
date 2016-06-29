@@ -84,11 +84,15 @@ that was covered from a random sampling of alignments.
 
 Output of this program is a tab delimited text file with following:
 
-Column	Description
+Column		Description
 Level		The sampling level alignments were taken at
+
 Iteration	The ith iteration of the current sampling level
+
 Gene Id		The reference sequence having a gene fraction greater than threshold
+
 Gene Fraction	The overall fraction of the gene that was covered from the sample of alignments
+
 Hits		The amount of times that the reference sequence was seen from the sample of alignments
 
 ------
