@@ -1,6 +1,6 @@
 categories: [Metagenomics]
 description: Contains a suite of tools for analyzing metagenomic sequence data.
-name: amrplusplus_suite
+name: suite_amrplusplus
 type: repository_suite_definition
 remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/suites/amrplusplus
 owner: chrisd
