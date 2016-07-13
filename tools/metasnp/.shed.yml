@@ -3,4 +3,4 @@ owner: chrisd
 categories: [Variant Analysis]
 description: A simple naive metagenomics variant caller
 type: unrestricted
-remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/snpfinder
+remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/metasnp
