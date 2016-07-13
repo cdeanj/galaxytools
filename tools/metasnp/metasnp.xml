@@ -1,7 +1,7 @@
 <tool id="metasnp" name="MetaSNP" version="0.1.0">
     <description>A simple naive metagenomics variant caller</description>
     <requirements>
-        <requirement type="package" version="0.1">meta_snp</requirement>
+        <requirement type="package" version="0.1">metasnp</requirement>
     </requirements>
     <stdio>
         <exit_code range="1:" />
