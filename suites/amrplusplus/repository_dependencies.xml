@@ -8,6 +8,6 @@
     <repository changeset_revision="1bcf0e168661" name="suite_kraken_0_10_5" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="723b5b38d88a" name="fastqtofasta" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="af7c50162f0b" name="bam_to_sam" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
-    <repository changeset_revision="d612ce3827b9" name="snipfinder" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="a3d1f2a85806" name="metasnp" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="ec439b0e7512" name="coverage_sampler" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
 </repositories>
