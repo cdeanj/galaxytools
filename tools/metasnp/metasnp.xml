@@ -36,20 +36,20 @@
 	</conditional>
     </inputs>
     <outputs>
-	<data name="result" format="tabular" />
+	<data name="output" format="tabular" />
     </outputs>
     <tests>
 	<test>
 	    <param name="mode" value="single_end"/>
             <param name="reference" value="ref.fa"/>
             <param name="samse_input" value="samse.sam"/>
-            <output name="result" file="samse_result" ftype="tabular"/>
+            <output name="output" file="samse_result" ftype="tabular"/>
         </test>
 	<test>
 	    <param name="mode" value="paired_end"/>
 	    <param name="reference" value="ref.fa"/>
 	    <param name="sampe_input" value="sampe.sam"/>
-	    <output name="result" file="sampe_result" ftype="tabular"/>
+	    <output name="output" file="sampe_result" ftype="tabular"/>
 	</test>
     </tests>
     <help><![CDATA[
