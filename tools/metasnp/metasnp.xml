@@ -16,7 +16,7 @@
 	    -sampe $sam_type.sampe_input
 	    $sam_type.best
 	    #end if
-	    -out_fp $result
+	    -out_fp $output
     ]]></command>
     <inputs>
 	<param type="data" name="reference" format="fasta" label="Reference sequence"/>
