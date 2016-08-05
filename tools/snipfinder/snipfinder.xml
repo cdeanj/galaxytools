@@ -1,0 +1,68 @@
+<tool id="snipfinder" name="snipfinder" version="0.1.0">
+    <description>A simple naive metagenomics variant caller</description>
+    <requirements>
+        <requirement type="package" version="0.1">snipfinder</requirement>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+    <command><![CDATA[
+	metasnp
+	    -amr_fp $reference
+	    #if $sam_type.mode == "single_end"
+	    -samse $sam_type.samse_input
+	    $sam_type.best
+	    #else
+	    -sampe $sam_type.sampe_input
+	    $sam_type.best
+	    #end if
+	    -out_fp $output
+    ]]></command>
+    <inputs>
+	<param type="data" name="reference" format="fasta" label="Reference sequence"/>
+	<conditional name="sam_type">
+	    <param name="mode" type="select" label="SAM file type">
+	        <option value="single_end"></option>
+		<option value="paired_end"></option>
+	    </param>
+	    <when value="single_end">
+	        <param type="data" name="samse_input" format="sam" label="Single-end SAM file"/>
+		<param name="best" type="boolean" label="Filter on unique alignments" truevalue="-b" falsevalue=""/>
+	    </when>
+	    <when value="paired_end">
+		<param type="data" name="sampe_input" format="sam" label="Paired-end SAM file"/>
+		<param name="best" type="boolean" label="Filter on unique alignments" truevalue="-b" falsevalue=""/>
+	    </when>
+	</conditional>
+    </inputs>
+    <outputs>
+	<data name="output" format="tabular" />
+    </outputs>
+    <tests>
+	<test>
+	    <param name="mode" value="single_end"/>
+            <param name="reference" value="ref.fa"/>
+            <param name="samse_input" value="samse.sam"/>
+            <output name="output" file="samse_result" ftype="tabular"/>
+        </test>
+	<test>
+	    <param name="mode" value="paired_end"/>
+	    <param name="reference" value="ref.fa"/>
+	    <param name="sampe_input" value="sampe.sam"/>
+	    <output name="output" file="sampe_result" ftype="tabular"/>
+	</test>
+    </tests>
+    <help><![CDATA[
+Program: metasnp
+
+Usage: metasnp [options]
+
+Options:
+    -amr_fp	amr database path
+    -samse	single-end sam file path
+    -sampe	paired-end sam file path
+    -b		filter on unique alignments
+    ]]></help>
+    <citations>
+    </citations>
+</tool>
