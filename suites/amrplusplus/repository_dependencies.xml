@@ -4,8 +4,7 @@
     <repository changeset_revision="f8a9a5eaca8a" name="trimmomatic" owner="pjbriggs" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="97bb72be07f9" name="samtools_flag_filter_1_2" owner="brenninc" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="a430da4f04cd" name="samtools_sort" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
-    <repository changeset_revision="1bcf0e168661" name="suite_kraken_0_10_5" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="af7c50162f0b" name="bam_to_sam" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
-    <repository changeset_revision="36995656583b" name="metasnp" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="c5085b1ad596" name="snipfinder" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="ec439b0e7512" name="coverage_sampler" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
 </repositories>
