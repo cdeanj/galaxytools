@@ -53,15 +53,7 @@
 	</test>
     </tests>
     <help><![CDATA[
-Program: metasnp
 
-Usage: metasnp [options]
-
-Options:
-    -amr_fp	amr database path
-    -samse	single-end sam file path
-    -sampe	paired-end sam file path
-    -b		filter on unique alignments
     ]]></help>
     <citations>
     </citations>
