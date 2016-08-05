@@ -1,4 +1,4 @@
-name: snipfinder
+name: Snipfinder
 owner: chrisd
 categories: [Variant Analysis]
 description: A simple naive metagenomics variant caller

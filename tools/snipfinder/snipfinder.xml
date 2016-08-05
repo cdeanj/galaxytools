@@ -1,4 +1,4 @@
-<tool id="snipfinder" name="snipfinder" version="0.1.0">
+<tool id="snipfinder" name="Snipfinder" version="0.1.0">
     <description>A simple naive metagenomics variant caller</description>
     <requirements>
         <requirement type="package" version="0.1">snipfinder</requirement>
