@@ -7,7 +7,7 @@
         <exit_code range="1:" />
     </stdio>
     <command><![CDATA[
-	metasnp
+	snipfinder
 	    -amr_fp $reference
 	    #if $sam_type.mode == "single_end"
 	    -samse $sam_type.samse_input
