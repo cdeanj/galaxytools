@@ -20,7 +20,7 @@
     </inputs>
     <outputs>
 	<data format="txt" name="prefix">
-   		<discover_datasets pattern="__designation__" ext="tab" directory="tables" visible="true" />
+   		<discover_datasets pattern="__designation__" ext="tabular" directory="tables" visible="true" />
    	</data>
     </outputs>
     <citations>
