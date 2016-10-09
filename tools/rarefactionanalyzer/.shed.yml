@@ -2,5 +2,5 @@ categories: [Genomic Interval Operations]
 description: A simple tool for creating rarefaction curves for metagenomic sequence data
 name: rarefaction_analyzer
 owner: chrisd
-remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/resistomeanalyzer
+remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/rarefactionanalyzer
 type: unrestricted
