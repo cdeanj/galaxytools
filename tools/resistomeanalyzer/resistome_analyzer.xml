@@ -1,4 +1,4 @@
-<tool id="gene_fraction" name="Coverage Sampler" version="0.1.0">
+<tool id="resistome_analyzer" name="ResistomeAnalyzer" version="0.1.0">
     <description>A simple tool for analyzing the resistome of metagenomic sequence data</description>
     <requirements>
 	<requirement type="package" version="0.1">resistome_analyzer</requirement>
