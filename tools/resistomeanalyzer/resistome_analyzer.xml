@@ -19,7 +19,7 @@
     </inputs>
     <outputs>
 	<data format="txt" name="report">
-                <discover_datasets pattern="(?P&lt;designation&gt;.+)\.tsv" ext="tabular" directory="tables" visible="true" />
+                <discover_datasets pattern="(?P&lt;name&gt;.*)" ext="tabular" directory="working" visible="true" />
         </data>
     </outputs>
     <citations>
