@@ -1,0 +1,6 @@
+categories: [Genomic Interval Operations]
+description: A simple tool for analyzing the resistome of metagenomic sequence data
+name: resistome_analyzer
+owner: chrisd
+remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/gene_fraction
+type: unrestricted

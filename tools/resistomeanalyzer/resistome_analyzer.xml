@@ -1,0 +1,29 @@
+<tool id="gene_fraction" name="Coverage Sampler" version="0.1.0">
+    <description>A simple tool for analyzing the resistome of metagenomic sequence data</description>
+    <requirements>
+	<requirement type="package" version="0.1">resistome_analyzer</requirement>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+    <command><![CDATA[
+	resistome
+	  -ref_fp $reference
+	  -annot_fp $annotation
+	  -sam_fp $sam
+	  -prefix $prefix
+    ]]></command>
+    <inputs>
+	<param type="data" name="reference" format="fasta" label="Reference sequence" />
+	<param type="data" name="sam" format="sam" label="SAM file" />
+	<param type="data" name="annotation" format="csv" label="Annotation file" />
+    </inputs>
+    <outputs>
+	<data name="prefix_gene_level_resistome" format="tabular" />
+	<data name="prefix_class_level_resistome" format="tabular" />
+	<data name="prefix_mechanism_level_resistome" format="tabular" />
+	<data name="prefix_group_level_resistome" format="tabular" />	
+    </outputs>
+    <citations>
+    </citations>
+</tool>
