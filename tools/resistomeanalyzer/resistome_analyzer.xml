@@ -11,6 +11,10 @@
 	  -ref_fp $reference
 	  -annot_fp $annotation
 	  -sam_fp $sam
+	  -gene_fp $gene
+	  -mech_fp $mech
+	  -class_fp $class
+	  -group_fp $group
     ]]></command>
     <inputs>
 	<param type="data" name="reference" format="fasta" label="Reference sequence" />
@@ -18,9 +22,10 @@
 	<param type="data" name="annotation" format="csv" label="Annotation file" />
     </inputs>
     <outputs>
-	<data format="txt" name="report">
-                <discover_datasets pattern="(?P&lt;name&gt;.*)" ext="tabular" directory="working" visible="true" />
-        </data>
+	<data name="gene" format="txt" />
+	<data name="mech" format="txt" />
+	<data name="class" format="txt" />
+	<data name="group" format="txt" />
     </outputs>
     <citations>
     </citations>
