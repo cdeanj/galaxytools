@@ -20,9 +20,6 @@
     </inputs>
     <outputs>
 	<data name="prefix" format="tabular" />
-	<data name="prefix" format="tabular" />
-	<data name="prefix" format="tabular" />
-	<data name="prefix" format="tabular" />	
     </outputs>
     <citations>
     </citations>
