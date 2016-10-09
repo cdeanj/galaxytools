@@ -22,10 +22,10 @@
 	<param type="data" name="annotation" format="csv" label="Annotation file" />
     </inputs>
     <outputs>
-	<data name="gene" format="txt" />
-	<data name="mech" format="txt" />
-	<data name="class" format="txt" />
-	<data name="group" format="txt" />
+	<data name="gene" format="tabular" />
+	<data name="mech" format="tabular" />
+	<data name="class" format="tabular" />
+	<data name="group" format="tabular" />
     </outputs>
     <citations>
     </citations>
