@@ -11,7 +11,6 @@
 	  -ref_fp $reference
 	  -annot_fp $annotation
 	  -sam_fp $sam
-	  -prefix $prefix
     ]]></command>
     <inputs>
 	<param type="data" name="reference" format="fasta" label="Reference sequence" />
@@ -19,7 +18,7 @@
 	<param type="data" name="annotation" format="csv" label="Annotation file" />
     </inputs>
     <outputs>
-	<data format="txt" name="prefix">
+	<data format="txt">
                 <discover_datasets pattern="(?P&lt;designation&gt;.+)\.tsv" ext="tabular" directory="tables" visible="true" />
         </data>
     </outputs>
