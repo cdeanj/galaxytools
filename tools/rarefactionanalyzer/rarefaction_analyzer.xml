@@ -1,4 +1,4 @@
-<tool id="rarefaction_analyzer" name="ResistomeAnalyzer" version="0.1.0">
+<tool id="rarefaction_analyzer" name="RarefactionAnalyzer" version="0.1.0">
     <description>A simple tool for creating rarefaction curves for metagenomic sequence data</description>
     <requirements>
 	<requirement type="package" version="0.1">rarefactionanalyzer</requirement>
