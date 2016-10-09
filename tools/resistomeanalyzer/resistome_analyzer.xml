@@ -19,8 +19,8 @@
 	<param type="data" name="annotation" format="csv" label="Annotation file" />
     </inputs>
     <outputs>
-	<data format="tabular" name="prefix">
- 		<discover_datasets pattern="__designation_and_ext__" directory="split" visible="true" />
+	<data format="txt" name="report">
+   		<discover_datasets pattern="__designation__" ext="tab" directory="tables" visible="true" />
    	</data>
     </outputs>
     <citations>
