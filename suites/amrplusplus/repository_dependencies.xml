@@ -6,5 +6,7 @@
     <repository changeset_revision="a430da4f04cd" name="samtools_sort" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="af7c50162f0b" name="bam_to_sam" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="c15d96ff8bf4" name="snipfinder" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
-    <repository changeset_revision="ec439b0e7512" name="coverage_sampler" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="9543fccd0efe" name="rarefaction_analyzer" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="6e3417efcef3" name="resistome_analyzer" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="23657fcaaa5c" name="xy_plot" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
 </repositories>
