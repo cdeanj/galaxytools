@@ -1,0 +1,47 @@
+<tool id="rarefaction_analyzer" name="ResistomeAnalyzer" version="0.1.0">
+    <description>A simple tool for creating rarefaction curves for metagenomic sequence data</description>
+    <requirements>
+	<requirement type="package" version="0.1">rarefactionanalyzer</requirement>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+    <command><![CDATA[
+	rarefaction
+	  -ref_fp $reference
+	  -annot_fp $annotation
+	  -sam_fp $sam
+	  -min $min
+	  -max $max
+	  -t $threshold
+	  -samples $samples
+	  -skip $skip
+	  -gene_fp $gene
+	  -mech_fp $mech
+	  -class_fp $class
+	  -group_fp $group
+    ]]></command>
+    <inputs>
+	<param type="data" name="reference" format="fasta" label="Reference sequence" />
+	<param type="data" name="sam" format="sam" label="SAM file" />
+	<param type="data" name="annotation" format="csv" label="Annotation file" />
+	<param name="min" type="integer" label="Starting sample level"
+	       value="1" min="1" max="100" help="(-min)" />
+	<param name="max" type="integer" label="Ending sample level"
+	       value="1" min="1" max="100" help="(-max)" />
+	<param name="threshold" type="integer" label="Gene fraction threshold"
+	       value="0" min="0" max="100" help="(-t)" />
+	<param name="skip" type="integer" label="Amount of sample levels to skip"
+	       value="1" min="1" max="100" help="(-skip)" />
+	<param name="samples" type="integer" label="Iterations per sample level"
+	       value="1" min="1" max="100" help="(-samples)" />
+    </inputs>
+    <outputs>
+	<data name="gene" format="tabular" />
+	<data name="mech" format="tabular" />
+	<data name="class" format="tabular" />
+	<data name="group" format="tabular" />
+    </outputs>
+    <citations>
+    </citations>
+</tool>
