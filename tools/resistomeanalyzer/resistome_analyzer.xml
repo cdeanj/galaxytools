@@ -19,10 +19,10 @@
 	<param type="data" name="annotation" format="csv" label="Annotation file" />
     </inputs>
     <outputs>
-	<data name="prefix_gene_level_resistome" format="tabular" />
-	<data name="prefix_class_level_resistome" format="tabular" />
-	<data name="prefix_mechanism_level_resistome" format="tabular" />
-	<data name="prefix_group_level_resistome" format="tabular" />	
+	<data name="filename" label="${prefix}_gene_level_resistome" format="tabular" />
+	<data name="filename" label="${prefix}_group_level_resistome" format="tabular" />
+	<data name="filename" label="${prefix}_class_level_resistome" format="tabular" />
+	<data name="filename" label="${prefix}_mechanism_level_resistome" format="tabular" />	
     </outputs>
     <citations>
     </citations>
