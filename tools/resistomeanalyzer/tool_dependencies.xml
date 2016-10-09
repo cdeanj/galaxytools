@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <tool_dependency>
-    <package name="resistome_analyzer" version="0.1">
+    <package name="resistomeanalyzer" version="0.1">
         <install version="1.0">
             <actions>
                 <action type="shell_command">git clone --recursive https://github.com/cdeanj/resistomeanalyzer.git</action>
