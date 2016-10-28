@@ -1,6 +1,0 @@
-categories: [Genomic Interval Operations]
-description: A simple tool for calculating the amount of a gene that is covered by a sample of alignments
-name: coverage_sampler
-owner: chrisd
-remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/gene_fraction
-type: unrestricted
