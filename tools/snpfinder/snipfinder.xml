@@ -1,13 +1,13 @@
-<tool id="snipfinder" name="Snip Finder" version="0.1.0">
+<tool id="snpfinder" name="SNPFinder" version="0.1.0">
     <description>A simple naive metagenomics variant caller</description>
     <requirements>
-        <requirement type="package" version="0.1">snipfinder</requirement>
+        <requirement type="package" version="0.1">snpfinder</requirement>
     </requirements>
     <stdio>
         <exit_code range="1:" />
     </stdio>
     <command><![CDATA[
-	snipfinder
+	snpfinder
 	    -amr_fp $reference
 	    #if $sam_type.mode == "single_end"
 	    -samse $sam_type.samse_input
