@@ -1,6 +1,6 @@
-name: snipfinder
+name: snpfinder
 owner: chrisd
 categories: [Variant Analysis]
 description: A simple naive metagenomics variant caller
 type: unrestricted
-remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/snipfinder
+remote_repository_url: https://github.com/cdeanj/galaxytools/tree/master/tools/snpfinder
