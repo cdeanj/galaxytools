@@ -5,7 +5,7 @@
     <repository changeset_revision="97bb72be07f9" name="samtools_flag_filter_1_2" owner="brenninc" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="a430da4f04cd" name="samtools_sort" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="af7c50162f0b" name="bam_to_sam" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
-    <repository changeset_revision="c15d96ff8bf4" name="snipfinder" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
+    <repository changeset_revision="7073825e4338" name="snpfinder" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="9543fccd0efe" name="rarefaction_analyzer" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="c9fbf44a96f7" name="resistome_analyzer" owner="chrisd" toolshed="http://toolshed.g2.bx.psu.edu" />
     <repository changeset_revision="23657fcaaa5c" name="xy_plot" owner="devteam" toolshed="http://toolshed.g2.bx.psu.edu" />
