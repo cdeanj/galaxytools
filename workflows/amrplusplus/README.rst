@@ -1,7 +1,7 @@
 What is this?
 =============
 
-A suite that contains a collection of tools and workflows which can be used to identify and characterize resistance and virulence genes.
+A suite that contains a collection of tools and workflows which can be used to identify and characterize resistance genes.
 
 .. image:: https://raw.githubusercontent.com/cdeanj/galaxytools/master/workflows/amrplusplus/workflow.jpeg
 
