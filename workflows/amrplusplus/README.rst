@@ -5,17 +5,6 @@ A suite that contains a collection of tools and workflows which can be used to i
 
 .. image:: https://raw.githubusercontent.com/cdeanj/galaxytools/master/workflows/amrplusplus/workflow.jpeg
 
-Availability
-============
-
-The workflow and the tools needed to run the workflow can be downloaded from Galaxy's main toolshed
-
-https://toolshed.g2.bx.psu.edu/view/chrisd/amrplusplus_workflow/
-
-Development is being done on GitHub
-
-https://github.com/cdeanj/galaxytools/tree/master/workflows/amrplusplus
-
 MIT License
 ===========
 
